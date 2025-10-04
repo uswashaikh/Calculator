@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Epic Calculator</title>
+  <!-- Linking external CSS file for styling the calculator -->
+  <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+  <!-- Main calculator container -->
+  <div class="calculator" role="region" aria-label="Calculator">
+    
+    <!-- Display area to show current input and calculation results -->
+    <div id="display" tabindex="0" aria-live="polite">0</div>
+
+    <!-- Container for all calculator buttons -->
+    <div class="buttons" role="group" aria-label="Calculator buttons">
+      
+      <!-- Top row function buttons -->
+      <button class="btn func" id="clear" aria-label="Clear">C</button>
+      <button class="btn func" id="delete" aria-label="Delete last character">⌫</button>
+      <button class="btn func" id="percent" aria-label="Percentage">%</button>
+      <button class="btn operator" data-op="/" aria-label="Divide">÷</button>
+
+      <!-- Number row 1 -->
+      <button class="btn number" data-num="7" aria-label="7">7</button>
+      <button class="btn number" data-num="8" aria-label="8">8</button>
+      <button class="btn number" data-num="9" aria-label="9">9</button>
+      <button class="btn operator" data-op="*" aria-label="Multiply">×</button>
+
+      <!-- Number row 2 -->
+      <button class="btn number" data-num="4" aria-label="4">4</button>
+      <button class="btn number" data-num="5" aria-label="5">5</button>
+      <button class="btn number" data-num="6" aria-label="6">6</button>
+      <button class="btn operator" data-op="-" aria-label="Subtract">−</button>
+
+      <!-- Number row 3 -->
+      <button class="btn number" data-num="1" aria-label="1">1</button>
+      <button class="btn number" data-num="2" aria-label="2">2</button>
+      <button class="btn number" data-num="3" aria-label="3">3</button>
+      <button class="btn operator" data-op="+" aria-label="Add">+</button>
+
+      <!-- Bottom row -->
+      <!-- Zero button spans two columns to make it wider -->
+      <button class="btn number zero" data-num="0" aria-label="0">0</button>
+      <button class="btn number" data-num="." aria-label="Decimal point">.</button>
+      <button class="btn func" id="sqrt" aria-label="Square root">√</button>
+      <button class="btn func" id="equals" aria-label="Equals">=</button>
+    </div>
+  </div>
+
+  <!-- Linking external JS file which handles calculator functionality -->
+  <script src="calculator.js"></script>
+</body>
+</html>
