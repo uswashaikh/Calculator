@@ -30,4 +30,4 @@ Decimal Numbers: Use the . button or the . key on your keyboard to input decimal
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-Repository Link:https://github.com/uswashaikh/Calculator
+Repo Link: https://github.com/uswashaikh/Calculator
